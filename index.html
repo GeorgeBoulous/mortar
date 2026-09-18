@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>WARDOGS Mortar Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1>WARDOGS Mortar Calc</h1>
+
+    <div class="input-group">
+      <label for="mortarInput">MORTAR</label>
+      <input type="text" id="mortarInput" placeholder="98.10, 109.81" autocomplete="off" autofocus>
+    </div>
+
+    <div class="input-group">
+      <label for="targetInput">TARGET</label>
+      <input type="text" id="targetInput" placeholder="94.73, 107.36" autocomplete="off">
+    </div>
+
+    <div class="result-box">
+      <div id="resultValue" class="result-value">—</div>
+      <button id="copyBtn" class="btn-copy">COPY</button>
+
+      <div class="delta-row">
+        <span id="deltaX">ΔX: —</span>
+        <span id="deltaY">ΔY: —</span>
+      </div>
+    </div>
+
+    <div id="statusMsg" class="status-msg">Enter both coordinates</div>
+
+    <button id="clearBtn" class="btn-clear">CLEAR</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
